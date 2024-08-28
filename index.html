@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!----------------------Sign Up-------------------------------------------->
+    <section class="welcome-section section">
+      <div class="container">
+        <div class="record">
+          <h1 class="main-title">Water consumption tracker</h1>
+          <h2 class="title">Record daily water intake and track</h2>
+          <h3 class="text-title">Tracker Benefits</h3>
+          <ul class="benefits-first-list list">
+            <li class="benefits-first-item">
+              <div class="benefits-first-svg">
+                <svg
+                  class="benefits-first-svg-icon"
+                  width="32"
+                  height="32"
+                  aria-label="calendar icon"
+                >
+                  <use href="./images/symbol-defs.svg#icon-icon-calendar"></use>
+                </svg>
+              </div>
+              <p class="benefits-first-text text">Habit drive</p>
+            </li>
+            <li class="benefits-first-item">
+              <div class="benefits-first-svg">
+                <svg
+                  class="benefits-first-svg-icon"
+                  width="32"
+                  height="32"
+                  aria-label="checkmark icon"
+                >
+                  <use
+                    href="./images/symbol-defs.svg#icon-icon-presentation-chart-bar"
+                  ></use>
+                </svg>
+              </div>
+              <p class="benefits-first-text text">View statistics</p>
+            </li>
+            <li class="benefits-first-item">
+              <div class="benefits-first-svg">
+                <svg
+                  class="benefits-first-svg-icon"
+                  width="32"
+                  height="32"
+                  aria-label="diagram icon"
+                >
+                  <use href="./images/symbol-defs.svg#icon-icon-tools"></use>
+                </svg>
+              </div>
+              <p class="benefits-first-text text">Personal rate setting</p>
+            </li>
+          </ul>
+          <button class="main-button" type="button">Try tracker</button>
+        </div>
+        <div class="why">
+          <h3 class="text-title">Why drink water</h3>
+          <ul class="benefits-second-list list">
+            <li class="benefits-second-item">
+              <div class="benefits-second-svg">
+                <svg
+                  class="benefits-second-svg-icon"
+                  width="8"
+                  height="8"
+                  aria-label="ellipse icon"
+                >
+                  <use href="./images/symbol-defs.svg#icon-icon-ellipse"></use>
+                </svg>
+              </div>
+              <p class="benefits-second-text text">
+                Supply of nutrients to all organs
+              </p>
+            </li>
+            <li class="benefits-second-item">
+              <div class="benefits-second-svg">
+                <svg
+                  class="benefits-second-svg-icon"
+                  width="8"
+                  height="8"
+                  aria-label="ellipse icon"
+                >
+                  <use href="./images/symbol-defs.svg#icon-icon-ellipse"></use>
+                </svg>
+              </div>
+              <p class="benefits-second-text text">
+                Providing oxygen to the lungs
+              </p>
+            </li>
+            <li class="benefits-second-item">
+              <div class="benefits-second-svg">
+                <svg
+                  class="benefits-second-svg-icon"
+                  width="8"
+                  height="8"
+                  aria-label="ellipse icon"
+                >
+                  <use href="./images/symbol-defs.svg#icon-icon-ellipse"></use>
+                </svg>
+              </div>
+              <p class="benefits-second-text text">
+                Maintaining the work of the heart
+              </p>
+            </li>
+            <li class="benefits-second-item">
+              <div class="benefits-second-svg">
+                <svg
+                  class="benefits-second-svg-icon"
+                  width="8"
+                  height="8"
+                  aria-label="ellipse icon"
+                >
+                  <use href="./images/symbol-defs.svg#icon-icon-ellipse"></use>
+                </svg>
+              </div>
+              <p class="benefits-second-text text">
+                Release of processed substances
+              </p>
+            </li>
+            <li class="benefits-second-item">
+              <div class="benefits-second-svg">
+                <svg
+                  class="benefits-second-svg-icon"
+                  width="8"
+                  height="8"
+                  aria-label="ellipse icon"
+                >
+                  <use href="./images/symbol-defs.svg#icon-icon-ellipse"></use>
+                </svg>
+              </div>
+              <p class="benefits-second-text text">
+                Ensuring the stability of the internal environment
+              </p>
+            </li>
+            <li class="benefits-second-item">
+              <div class="benefits-second-svg">
+                <svg
+                  class="benefits-second-svg-icon"
+                  width="8"
+                  height="8"
+                  aria-label="ellipse icon"
+                >
+                  <use href="./images/symbol-defs.svg#icon-icon-ellipse"></use>
+                </svg>
+              </div>
+              <p class="benefits-second-text text">
+                Maintaining within the normal temperature
+              </p>
+            </li>
+            <li class="benefits-second-item">
+              <div class="benefits-second-svg">
+                <svg
+                  class="benefits-second-svg-icon"
+                  width="8"
+                  height="8"
+                  aria-label="ellipse icon"
+                >
+                  <use href="./images/symbol-defs.svg#icon-icon-ellipse"></use>
+                </svg>
+              </div>
+              <p class="benefits-second-text text">
+                Maintaining an immune system capable of resisting disease
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------Sign In-------------------------------------------->
+    <section class="sign-in">
+      <div class="container">
+        <h2 class="text-title">Sign In</h2>
+        <form class="form">
+          <div class="form-field-wrapper">
+            <label class="form-field-label" for="user-email"
+              >Enter your email</label
+            >
+            <div class="form-input-wrapper">
+              <input
+                class="form-field-input"
+                id="user-email"
+                name="user-email"
+                placeholder="E-mail"
+                type="email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-field-wrapper">
+            <label class="form-field-label" for="user-password"
+              >Enter your password</label
+            >
+            <div class="form-input-wrapper">
+              <input
+                class="form-field-input"
+                id="user-password"
+                name="user-password"
+                placeholder="Password"
+                type="text"
+                required
+              />
+              <svg
+                class="connection-form-input-icon"
+                width="18"
+                height="24"
+                aria-label="icon phone"
+              >
+                <use href="./images/symbol-defs.svg#icon-icon-eye-slash"></use>
+              </svg>
+            </div>
+          </div>
+          <button class="form-submit-btn" type="submit">Sign In</button>
+          <a class="link" href="">Sign up</a>
+        </form>
+      </div>
+    </section>
+    <!----------------------End of Sign In-------------------------------------------->
+    <!----------------------Sign Up-------------------------------------------->
+    <section class="sign-up">
+      <div class="container">
+        <h2 class="text-title">Sign Up</h2>
+        <form class="form">
+          <div class="form-field-wrapper">
+            <label class="form-field-label" for="user-email"
+              >Enter your email</label
+            >
+            <div class="form-input-wrapper">
+              <input
+                class="form-field-input"
+                id="user-email"
+                name="user-email"
+                placeholder="E-mail"
+                type="email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-field-wrapper">
+            <label class="form-field-label" for="user-password"
+              >Enter your password</label
+            >
+            <div class="form-input-wrapper">
+              <input
+                class="form-field-input"
+                id="user-password"
+                name="user-password"
+                placeholder="Password"
+                type="text"
+                required
+              />
+              <svg
+                class="connection-form-input-icon"
+                width="18"
+                height="24"
+                aria-label="icon eye"
+              >
+                <use href="./images/symbol-defs.svg#icon-icon-eye-slash"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field-wrapper">
+            <label class="form-field-label" for="user-password"
+              >Repeat password</label
+            >
+            <div class="form-input-wrapper">
+              <input
+                class="form-field-input"
+                id="user-password"
+                name="user-password"
+                placeholder="Repeat password"
+                type="text"
+                required
+              />
+              <svg
+                class="connection-form-input-icon"
+                width="18"
+                height="24"
+                aria-label="icon eye"
+              >
+                <use href="./images/symbol-defs.svg#icon-icon-eye-slash"></use>
+              </svg>
+            </div>
+          </div>
+          <button class="form-submit-btn" type="submit">Sign Up</button>
+          <a class="link" href="">Sign in</a>
+        </form>
+      </div>
+    </section>
+    <!----------------------End of Sign Up-------------------------------------------->
+  </body>
+</html>
