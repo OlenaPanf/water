@@ -156,13 +156,15 @@ body {
 @media only screen and (max-width: 767px) {
   .container {
     max-width: 767px;
-    /* padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 40px; */
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .container {
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px; */
+  }
   /* .first-section {
   background-image: linear-gradient(
       to bottom,
