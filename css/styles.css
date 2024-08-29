@@ -36,5 +36,5 @@ button {
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
-  background-color: #ffffff;
+  background: var(--Primery-Color-White, #fff);
 }
