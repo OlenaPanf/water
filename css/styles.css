@@ -45,9 +45,9 @@ body {
 } */
 .container {
   margin-top: 24px;
-  padding-left: 20px;
+  /* padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 40px; */
   background-image: url('../images/background/mobile/icon-light-background-main-page.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -58,7 +58,11 @@ body {
 }
 
 .record {
+  /* margin-bottom: 40px; */
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 40px;
+  overflow: hidden; /* Додайте цю властивість */
 }
 
 .main-title {
@@ -87,28 +91,32 @@ body {
   margin-bottom: 12px;
 }
 
-.card-list {
+.card-record-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
 }
 
-.card-item {
+.card-record-item {
   display: flex;
   align-items: center;
   gap: 8px;
+  width: 100%;
 }
 
-.card-item-icon {
+.card-record-item-icon {
   width: 32px;
   height: 32px;
   fill: #407bff;
   flex-shrink: 0;
 }
 
-.card-item-text {
+.card-record-item-text {
   font-size: 16px;
   line-height: 1.25; /* 125% */
+  width: 176px; /* Фіксована ширина для тексту */
+  white-space: nowrap;
 }
 
 .button {
@@ -119,15 +127,15 @@ body {
   color: #fff;
   display: block;
   padding: 8px 30px;
-  /* justify-content: center;
-  align-items: center; */
   border: none;
   border-radius: 10px;
   background: #407bff;
   box-shadow: 0px 4px 8px 0px rgba(64, 123, 255, 0.34);
   cursor: pointer;
-  min-width: 280px;
+  width: 280px;
   height: 36px;
+  max-width: 100%; /* Додайте цю властивість */
+  box-sizing: border-box; /* Щоб врахувати padding у ширині */
   /* flex-shrink: 0; */
 }
 
@@ -139,17 +147,49 @@ body {
   box-shadow: none;
 }
 
+.why {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
 .card-why {
+  display: inline-block; /* Додайте цю властивість */
   padding: 24px 16px;
   border-radius: 10px;
   background: #ecf2ff;
   box-shadow: 0px 4px 14px 0px rgba(64, 123, 255, 0.3);
+  max-width: 100%;
+}
+
+.card-why-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.card-why-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
 }
 
 .card-item-svg {
   width: 8px;
   height: 8px;
   fill: #407bff;
+  flex-shrink: 0;
+}
+
+.card-why-item-text {
+  font-size: 16px;
+  line-height: 1.25; /* 125% */
+  width: auto; /* Змініть з 232px на auto */
+  max-width: 100%; /* Додайте це, щоб текст не виходив за межі */
+  overflow-wrap: break-word; /* Додайте для автоматичного переносу слів */
+  white-space: normal; /* Додайте, якщо хочете, щоб текст міг переноситися */
   flex-shrink: 0;
 }
 
@@ -161,24 +201,102 @@ body {
 
 @media only screen and (min-width: 768px) {
   .container {
-    /* padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 40px; */
+    background-image: url('../images/background/tablet/icon-light-background-main-page.svg');
   }
-  /* .first-section {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/img10.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: auto;
-  margin-right: auto;
-} */
+
+  .record {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 60px;
+  }
+
+  .card-record-list {
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+  }
+
+  .card-record-item {
+    width: 100%;
+  }
+
+  .card-record-item-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button {
+    font-size: 18px;
+    line-height: 1.33; /* 133.333% */
+    padding: 10px 30px;
+    width: 336px;
+    height: 44px;
+    /* flex-shrink: 0; */
+  }
+
+  .why {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 50px;
+  }
+  .card-why {
+    padding: 32px 24px;
+  }
+
+  .card-why-item-text {
+    width: 430px;
+    flex-shrink: 0;
+  }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
+  .container {
+    display: flex; /* Додаємо Flexbox */
+    justify-content: center; /* Центруємо елементи по горизонталі */
+    align-items: center;
+    gap: 81px; /* Додаємо відстань між елементами */
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-bottom: 81px;
+    background-image: url('../images/background/desktop/icon-light-background-main-page.svg'),
+      url('../images/background/desktop/icon-light-background-elem-main-page.svg');
+  }
+
+  .record {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .main-title {
+    font-size: 36px;
+    line-height: 1.16; /* 116.667% */
+  }
+
+  .title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.23; /* 123.077% */
+  }
+
+  .card-record-list {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 384px;
+    /* flex-shrink: 0; */
+  }
+
+  .why {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 50px;
+  }
+
+  /* .card-record-item-text {
+    font-size: 16px;
+    line-height: 1.25; 
+    width: 176px; 
+    white-space: nowrap;
+  } */
 }
