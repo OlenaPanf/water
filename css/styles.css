@@ -256,7 +256,8 @@ body {
     gap: 81px; /* Додаємо відстань між елементами */
     padding-left: 18px;
     padding-right: 18px;
-    margin-bottom: 81px;
+    padding-top: 80px;
+    padding-bottom: 294px;
     background-image: url('../images/background/desktop/icon-light-background-main-page.svg'),
       url('../images/background/desktop/icon-light-background-elem-main-page.svg');
   }
@@ -288,9 +289,14 @@ body {
   }
 
   .why {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
+    display: flex; /* Використовуємо Flexbox для .why */
+    flex-direction: column; /* Розміщуємо дочірні елементи в колонку */
+    justify-content: flex-end; /* Вирівнюємо дочірні елементи по нижньому краю */
+  }
+
+  .card-why {
+    width: auto; /* Або вкажіть фіксовану ширину, якщо потрібно */
   }
 
   /* .card-record-item-text {
